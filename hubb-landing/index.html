@@ -18,7 +18,21 @@
 </head>
 
 <body>
+<script>
+	$(document).ready(function() {
+        $('#fullpage').fullpage({
+            navigation: true,
+            navigationPosition: 'right',
+            responsive: 900,
+            keyboardScrolling: true,
 
+            afterRender: function() {
+
+                //playing the video
+                $('video').trigger('play');
+            }
+        });
+</script>
     
 </body>
 
