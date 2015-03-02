@@ -7,8 +7,6 @@
   src : url("/fonts/AnonymousPro.ttf");
 }
 
-html,
-body,
 .wrapper {
   height: 100%;
   font-family: "Anonymous Pro";
@@ -26,6 +24,7 @@ h1 {
 }
 
 h1.centered{
+  font-family: "Anonymous Pro";
   margin-left: 40%;
   float: left;
 }
@@ -56,6 +55,7 @@ p {
   color: #ccc;
   font-size: 0.8em;
   margin-top: 10%;
+  text-align: center;
 }
 
 a,
