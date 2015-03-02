@@ -7,16 +7,14 @@
   src : url("/fonts/AnonymousPro.ttf");
 }
 
-html,
-body,
 .wrapper {
   height: 100%;
   font-family: "Anonymous Pro";
 }
 
-body {
+/*body {
   text-align: center;
-}
+}*/
 
 h1 {
   font-size: 1.4em;
