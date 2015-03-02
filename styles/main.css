@@ -25,7 +25,8 @@ h1 {
 
 h1.centered{
   font-family: "Anonymous Pro";
-  margin-left: 40%;
+  /*margin-left: 35%;*/
+  text-align: center;
   float: left;
 }
 
