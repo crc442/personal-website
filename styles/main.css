@@ -25,6 +25,10 @@ h1 {
   margin-bottom: 2%;
 }
 
+h1.centered{
+  text-align: center;
+}
+
 .left {
   text-align: right;
   float: left;
