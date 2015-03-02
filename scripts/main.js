@@ -13,7 +13,8 @@
     var typist = malarkey(el, opts)
 
     typist
-        .pause(2400).delete(initialText.length - 2)
+        .pause(2400).delete(initialText.length)
+        .type('a geek').pause().delete(4)
         .type('hero').pause().delete(4)
         .type('nerd').pause().delete(6)
         .type('sexy').pause().delete(4)
@@ -22,7 +23,8 @@
         .type('javascript').pause().delete(10)
         .type('a geek').pause().delete(4)
         .type('Web Developer').pause().delete(14)
-        .type('n amateur Drummer').pause().delete(18)
+        .type('n amateur drummer').pause().delete(18)
+        .type('a Software Engineer').pause().delete(19)
         .type('that guy').pause().delete(8)
         .type('Chirag.').pause(1200)
         .call(function() {
