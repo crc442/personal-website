@@ -19,12 +19,13 @@
 h1 {
   font-size: 1.4em;
   font-weight: 600;
-/*  margin-top: 10%;
-  margin-bottom: 2%;*/
+  margin-top: 10%;
+  margin-bottom: 2%;
 }
 
 h1.centered{
-  margin-left: 40%;
+  margin-left: 100px;
+  float: left;
 }
 
 .left {
