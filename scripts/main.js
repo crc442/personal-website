@@ -26,7 +26,7 @@
         .type('that guy').pause(pause).delete(8)
         .type('Chirag.').pause(1200)
         .call(function() {
-            $(el).addClass("disabled")
+            el.className += " disabled"
         });
 
 })();
