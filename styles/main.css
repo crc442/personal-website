@@ -11,9 +11,9 @@ html,
 body,
 .wrapper {
   height: 100%;
-  background-image: url("/images/grey_wash_wall.png");
+  /*background-image: url("/images/grey_wash_wall.png");*/
   font-family: "Anonymous Pro";
-  color: white;
+  /*color: white;*/
 }
 
 body {
