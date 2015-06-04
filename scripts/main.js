@@ -26,9 +26,12 @@
         .type('n amateur drummer').pause().delete(18)
         .type('a Software Engineer').pause().delete(19)
         .type('that guy').pause().delete(8)
-        .type('Chirag.').pause(1200)
+        .type('Chirag.').pause().type(' And I love building things with code.').pause(1200)
         .call(function() {
             el.className += "disabled"
         });
+
+    // var heads = ["👋", "🍉", "🐝", "💥", "⚓"];
+    // document.querySelector('.js-head').innerHTML = heads[Math.floor(Math.random() * heads.length)];
 
 })();

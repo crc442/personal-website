@@ -1,5 +1,11 @@
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.8em;
+    font-family: 'Cutive Mono', "YuMincho", monospace;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    word-wrap: break-word
 }
 
 @font-face{
@@ -7,129 +13,306 @@
   src : url("/fonts/AnonymousPro.ttf");
 }
 
-.wrapper {
-  height: 100%;
-  font-family: "Anonymous Pro";
+code {
+    font-family: 'Cutive Mono', "YuMincho", monospace
 }
 
-h1 {
-  font-size: 1.4em;
-  font-weight: 600;
-  margin-top: 10%;
-  margin-bottom: 2%;
+h3,
+.name {
+    font-family: "Anonymous Pro";
+    font-weight: normal
 }
 
-h1.centered{
-  font-family: "Anonymous Pro";
-  margin-left: 40%;
-}
-
-.left {
-  text-align: right;
-  float: left;
-  width: 50%;
-}
-
-.right {
-  text-align: left;
-  float: right;
-  width: 50%;
-}
-
-.networks {
-  overflow: hidden;
+h3 {
+    background: url("/images/fun-line.png") 0 100% no-repeat;
+    margin-left: -2px;
+    padding-left: 2px;
+    background-size: 20px;
+    font-size: 1.2em
 }
 
 p {
-  color: #888;
-  font-size: 1em;
-  margin: 0;
+    margin-bottom: 1.5em;
+    margin-bottom: 1.5em
 }
 
-.hi5 {
-  color: #ccc;
-  font-size: 0.8em;
-  margin-top: 10%;
-  text-align: center;
+.pagination {
+    margin: 100px 0 40px;
+    text-align: center
 }
 
+a {
+    color: #1D75AB;
+    text-decoration: none
+}
+
+a.page-nav {
+    white-space: nowrap;
+    margin-right: 30px;
+    padding: 0 10px;
+    border-bottom: 1px solid #489CCB;
+    font-size: 0.8em
+}
+
+a.home {
+    padding: 10px
+}
+
+h3 {
+    margin-top: 50px
+}
+
+h3:first-child {
+    margin-top: 0
+}
+
+.post-title {
+    background: none;
+    margin: 0;
+    font-size: 1.5em
+}
+
+mark {
+    background-color: #F5FFCD
+}
+
+div,
 a,
-a:visited {
-  text-decoration: none;
-  color: #3790FF;
+img {
+    box-sizing: border-box
 }
 
-a:hover {
-  text-decoration: underline;
+.sidebar,
+.column {
+    width: 100%;
+    padding: 30px 0
+}
+
+.header,
+.footer,
+.wrapper {
+    width: 100%;
+    margin: 0 auto
+}
+
+.footer,
+.header {
+    text-align: center;
+    padding: 30px 0
+}
+
+.wrapper {
+    max-width: 660px
+}
+
+.wrapper:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.header {
+    border-bottom: 1px solid #eee
+}
+
+.footer {
+    background: #f9f9f9
+}
+
+.post-header {
+    text-align: center
+}
+
+.post-header:after {
+    display: block;
+    content: "";
+    background: url("fun-line.png") no-repeat;
+    height: 5px;
+    width: 20px;
+    background-size: 100%;
+    margin: 30px auto 0
+}
+
+.post-header,
+article {
+    margin-bottom: 30px
+}
+
+article img:not(.emoji) {
+    padding: 20px;
+    border: 1px solid #eee
+}
+
+.there-is-no-link {
+    color : #8e44ad;
+}
+
+.has-code {
+    color : #16a085;
+}
+
+.photos:before,
+.photos:after,
+.caption:before,
+.caption:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.photos {
+    position: relative;
+    margin-bottom: 15px
+}
+
+.photo {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    float: left
+}
+
+.photo img {
+    background-color: #f0f0f0;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px
+}
+
+.photo.p-1:hover ~ .c-1,
+.photo.p-2:hover ~ .c-2,
+.photo.p-3:hover ~ .c-3,
+.photo.p-4:hover ~ .c-4,
+.photo.p-5:hover ~ .c-5,
+.photo.p-6:hover ~ .c-6 {
+    display: block
+}
+
+.caption {
+    display: none;
+    top: 100%;
+    line-height: 1;
+    font-size: 0.8em;
+    position: absolute
+}
+
+.list {
+    padding-left: 15px;
+    list-style-image: url("x.png")
+}
+
+.list li {
+    padding: 0;
+    font-size: 0.9em;
+    color: #4B4640;
+    margin-bottom: 15px
+}
+
+.list a {
+    font-weight: bold
+}
+
+img {
+    max-width: 100%
+}
+
+hr {
+    margin: 40px 70% 40px 0;
+    border: 0;
+    border-top: 1px solid #A6D2E2
+}
+
+blockquote {
+    margin: 40px 0px;
+    padding: 10px 20px 10px 50px;
+    border-left: 4px double #ddd
+}
+
+blockquote p:first-child {
+    margin-top: 0
+}
+
+blockquote p:last-child {
+    margin-bottom: 0
+}
+
+@media (max-width: 540px) {
+    .column,
+    .sidebar {
+        padding: 30px 20px
+    }
 }
 
 #i-am:after {
-  -webkit-animation: cursor-blink 0.8s linear infinite;
-  -moz-animation: cursor-blink 0.8s linear infinite;
-  -o-animation: cursor-blink 0.8s linear infinite;
-  animation: cursor-blink 0.8s linear infinite;
-  content: "|";
-  color: #cb3837;
-  padding-left: 3px;
+    -webkit-animation: cursor-blink 0.8s linear infinite;
+    -moz-animation: cursor-blink 0.8s linear infinite;
+    -o-animation: cursor-blink 0.8s linear infinite;
+    animation: cursor-blink 0.8s linear infinite;
+    content: "|";
+    color: #cb3837;
+    padding-left: 3px;
 }
- 
+
 #i-am.disabled:after {
-  content: none;
+    content: none;
 }
- 
+
 @-moz-keyframes cursor-blink {
-  1% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
+    1% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
 @-webkit-keyframes cursor-blink {
-  1% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
+    1% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
 @-o-keyframes cursor-blink {
-  1% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
+    1% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
 @keyframes cursor-blink {
-  1% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
+    1% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
 }

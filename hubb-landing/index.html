@@ -79,9 +79,8 @@
         <div class="section" id="section4">
             <div class="section4">
                 <div class="app-icon"></div>
-                <h3>The Music that you want to hear. Coming soon..</h3>
-                <p>Will be available for iPhone 4, 5, 6 and 6+.</p>
-
+                <h3>The Music that you want to hear.</h3>
+                <p>Available for iPhone 4, 5, 6 and 6+.</p>
                 <div class="social">
                     <div class="twitter">
                         <a id="twitter-link" href="http://twitter.com/imcrc" target="_blank"></a>
@@ -95,32 +94,33 @@
             </div>
         </div>
     </div>
-    </div>
+    <script>
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            navigation: true,
+            navigationPosition: 'right',
+            responsive: 900,
+            keyboardScrolling: true.
+            
+        });
 
-    <body>
-        <script>
-        $(document).ready(function() {
-                    $('#fullpage').fullpage({
-                        navigation: true,
-                        navigationPosition: 'right',
-                        responsive: 900,
-                        keyboardScrolling: true,
-                    });
+        // #('#video').fullPage{
+        //     this.selfrendering();
+        // }
 
 
-                    $(".logo").addClass("animated fadeInUp visible");
-                    setTimeout(function() {
-                        $("h1").addClass("animated fadeInUp visible");
-                    }, 1000);
-                    setTimeout(function() {
-                        $("h2").addClass("animated fadeInUp visible");
-                    }, 2000);
-                    setTimeout(function() {
-                        $(".scroll-down").addClass("animated fadeInUp visible");
-                    }, 2600);
-                });
-        </script>
-
-    </body>
+        $(".logo").addClass("animated fadeInUp visible");
+        setTimeout(function() {
+            $("h1").addClass("animated fadeInUp visible");
+        }, 1000);
+        setTimeout(function() {
+            $("h2").addClass("animated fadeInUp visible");
+        }, 2000);
+        setTimeout(function() {
+            $(".scroll-down").addClass("animated fadeInUp visible");
+        }, 2600);
+    });
+    </script>
+</body>
 
 </html>
