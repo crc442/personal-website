@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='/styles/main.css' rel='stylesheet' type='text/css' />
+    <link href='/styles/variables.css' rel='stylesheet' type='text/css' />
+    <meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
+    <meta content='text/html; charset=utf-8' http-equiv='content-type' />
+    <link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Halant' rel='stylesheet' type='text/css'>
+    <title>Finally !</title>
+</head>
+
+<body>
+    <header class="header" data-pjax>
+        <a href="/" class="home js-head">&#128123;</a>
+    </header>
+    <div class="wrapper">
+        <div class="column js-content">
+            <article>
+                <header class="post-header">
+                    <h3 class="post-title">Finally! &#128517;</h3>
+                    <small>
+                  14 April 2011 -
+                  by <a href="https://twitter.com/imcrc" target="_blank">@imCrC</a>
+                </small>
+                </header>
+                <blockquote>
+                    <p>So, started blogging again! Yaay!
+                        <br>
+                        <br>I am not yet sure what this blog is gonna be about. I am not going to ponder about it now, I am gonna let the future-me decide it. But as of now, I think this blog will mostly be about me dumping some of my programming knacks and some basic tutorials. But, I don’t want this to be one of those boring technical blogs with the boring technical stuff, so I am going to throw in some of ‘my-humor’ here and there. I love xkcd comics. Just, bear with me. I think it will be fun!
+                        <br>
+                        <br> So, what do I start with? Aahh….Python tweaks? Java tuts? I know, got it! With total respect to the Blog name, we’ll start with ‘random’. So, what random topic do we start with? Woah! What? Wasn’t this …? nevermind, this is totally weird!
+                    </p>
+                </blockquote>
+                <p><img src="http://imgs.xkcd.com/comics/im_so_random.png" alt="funny xkcd comic strip about randomness" /></p>
+                <br>
+                <strong>How does it work?</strong>
+                <p>
+                    How can a computer make a random number? There are sources of (probably) true randomness in the world of natural phenomena, such as radioactive decay, but most computers don’t use them. Instead computers rely on mathematical functions that produce pseudorandom numbers, called <a href="http://en.wikipedia.org/wiki/Pseudorandom_number_generator" target="_blank">Pseudorandom Number Generators (PRNGs)</a>.</p>
+                <p>
+                    Given the last generated number, and some configuration parameters (collectively, the state), they deterministically generate another number. In a good PRNG, these numbers will appear unpredictable, unless you know the ‘secret sauce’ (the state of the generator). For most purposes, pseudorandom is good enough.</p>
+                <p>
+                    <blockquote>
+                        <p>For better understanding, let's choose a language.</p>
+                        <code>mind.random(languages_i_know)<code> 
+                        <p>... aaaand we get the-totally-awesome-everyone’s-favourite :'PYTHON'</p>
+                </blockquote>
+                <p>
+                    As it turns out, the Python random module, uses a good PRNG called the <a href="http://en.wikipedia.org/wiki/Mersenne_twister" target="_blank">Mersenne Twister</a>. When you ask for a random number, the Twister generates the next in its series. If you asked for enough numbers(2^(19937 − 1) or 4.3 x 10e6001, which is a lot!), they would repeat.</p>
+
+                    <p><img src="http://imgs.xkcd.com/comics/ayn_random.png" alt="funny xkcd comic strip about randomness again"></p>
+                <p>
+                    Astute readers might see a flaw in this plan. How does it figure out the first number to start generating from? As it turns out, Python seeds the generator with some combination of the time, the machine name, yesterday’s baseball scores, Hollywood box office receipts, and other unlikely to repeat arcana. Actually, I don’t know how it seeds it, but it is likely to use things like the time, MAC addresses, IP address and other unique-ish things</p>
+                    <strong>Stop</strong>
+                    <p>Ahhhh...this is too big for a first post. Let's stop!</p>
+                    <p><img src="http://imgs.xkcd.com/comics/random_number.png" alt="funny xkcd comic strip about randomness yet again"></p>
+            </article>
+        </div>
+    </div>
+    <footer class="footer">
+        Lots of Love. THE END.
+    </footer>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-45337245-4', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script src="/scripts/malarkey.min.js"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>

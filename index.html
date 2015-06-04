@@ -2,52 +2,112 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>imCrC</title>
-    <link rel="stylesheet" href="/styles/main.css">
+    <link href='/styles/main.css' rel='stylesheet' type='text/css' />
+    <link href='/styles/variables.css' rel='stylesheet' type='text/css' />
+    <meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
+    <link href='http://fonts.googleapis.com/css?family=Cutive+Mono' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Halant' rel='stylesheet' type='text/css'>
+    <title>@imCrC</title>
 </head>
 
 <body>
-    <h1 class="centered">Hey there, I'm <span id="i-am">Chirag</span></h1>
+    <header class="header" data-pjax>
+        <a href="/" class="home">&#128123;</a>
+    </header>
     <div class="wrapper">
-        <div class="networks">
-            <div class="left">
-                <p>code on&nbsp;</p>
-                <p>tweet on&nbsp;</p>
-                <p>css on&nbsp;</p>
-                <p>connect on&nbsp;</p>
-                <p>photograph on&nbsp;</p>
-                <p>&amp; friend on&nbsp;</p>
+        <div class="sidebar">
+            <h3>
+          Hey there
+        </h3>
+            <p>
+                I'm <span id="i-am">Chirag</span>
+            </p>
+            <p>
+                I'm a graduate student at
+                <a href="https://github.com/">
+                    <mark>New York University</mark>
+                </a>. Currently employed by
+                <a href="https://www.vettery.com/">
+                    <mark>Vettery</mark>
+                </a>, where I work as a full stack intern. <!-- <a href="">more</a> -->
+            </p>
+            <h3 class="title-pictures">I live online here.</h3>
+            <div class="photos">
+                <a href="https://github.com/crc442" class="p-1 photo" target="_blank"><img alt="I dump code on Github." src="https://yt3.ggpht.com/-9K0-5s9RmHM/AAAAAAAAAAI/AAAAAAAAAAA/GlhNAL-FBC0/s900-c-k-no/photo.jpg"></a>
+                <a href="https://twitter.com/imcrc" class="p-2 photo" target="_blank"><img alt="Mostly retweet and hardly tweet on Twitter." src="https://pbs.twimg.com/profile_images/1463082672/Twitter-Logo_400x400.jpg"></a>
+                <a href="https://codepen.io/crc442" class="p-3 photo" target="_blank"><img alt="Try out CSS on Codepen." src="http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png"></a>
+                <a href="https://linkedin.com/in/crc442" class="p-4 photo" target="_blank"><img alt="Be professional on LinkedIn." src="http://partnersinexcellenceblog.com/wp-content/uploads/2015/01/LinkedIn-Picture.png"></a>
+                <a href="https://instagram.com/truthofalie" class="p-5 photo" target="_blank"><img alt="Get candid on Instagram." src="http://www.nerdsdemeiaidade.com.br/wp-content/uploads/2012/04/GEDC1746.jpg"></a>
+                <a href="https://facebook.com/chickenlolypop" class="p-6 photo" target="_blank"><img alt="Make friends on Facebook." src="http://cdn2.hubspot.net/hub/165357/file-18283701-jpg/images/facebook_icon_cool-typography.jpg"></a>
+                <div class="caption c-1">I dump code on Github.</div>
+                <div class="caption c-2">Mostly retweet and hardly tweet on Twitter.</div>
+                <div class="caption c-3">Try out CSS on Codepen.</div>
+                <div class="caption c-4">Be professional on LinkedIn.</div>
+                <div class="caption c-5">Get candid on Instagram.</div>
+                <div class="caption c-6">Make friends on Facebook.</div>
             </div>
-            <div class="right">
-                <p><a href="https://github.com/crc442">Github</a>
-                </p>
-                <p><a href="https://twitter.com/imcrc">Twitter</a>
-                </p>
-                <p><a href="http://www.codepen.io/crc442">CodePen</a>
-                </p>
-                <p><a href="http://www.linkedin.com/in/crc442">LinkedIn</a>
-                </p>
-                <p><a href="http://www.instagram.com/truthofalie">Instagram</a>
-                </p>
-                <p><a href="https://www.facebook.com/chickenlolypop">Facebook</a>.
-                </p>
-            </div>
+            <p>or just say <a href="mailto:chiragchauhan@nyu.edu?subject=Hi">Hi@email</a></p>
         </div>
-        <p class="hi5"><a href="http://www.chiragchauhan.com">High five! </a>
-        </p>
+        <div class="column js-content">
+            <h3 class="title-works">Fun projects.</h3>
+            <ul class="list">
+                <li>
+                    <a href="http://peerteach.herokuapp.com" target="_blank">peerpro.io</a>
+                    <br> online collaboration app; to peer program with friends or team mates. <a href="https://github.com/crc442/peerprohelp" target="_blank" class="has-code">code</a>.
+                </li>
+                <li>
+                    <a href="https://chrome.google.com/webstore/detail/buzzfeeder/jmagkjjnmiainmpbonbkjbgbchmbipdp/" target="_blank">buzzfeeder</a>
+                    <br> Winner at buzzfeed hackathon. Chrome extension that gives you feed about what your friends are reading on BuzzFeed in realtime.
+                </li>
+                <li>
+                    <a href="#">VB-to-Java GUI Converter</a>
+                    <br> windows application that converts the Visual Basic GUI code into its equivalent Java code. <a href="https://github.com/crc442/VisualBasic-to-Java-GUI-Converter" target="_blank" class="has-code">code</a>.
+                </li>
+                <li>
+                    <a href="#">Dynamics Simulator</a>
+                    <br> C++ physics engine for a 2D convex polygon. <a href="https://github.com/crc442/Dynamics-Simulator" target="_blank" class="has-code">code</a>.
+                </li>
+                <li>
+                    <a href="https://www.npmjs.com/package/what-credit-card" target="_blank">what-credit-card</a>
+                    <br>npm module to check validity and type of credit card. <a href="https://github.com/crc442/whatCreditCard" target="_blank" class="has-code">code</a>.
+                </li>
+                <li>
+                    <a href="http://chiragchauhan.com/presentation" target="_blank">Yolo-NYCTaxis</a>
+                    <br> used 'Hive' and visualized how NYC taxis behave during holiday season. <a href="https://github.com/crc442/massive-data-buzz" target="_blank" class="has-code">code</a>.
+                </li>
+            </ul>
+            <h3> &#128218; Writings.</h3>
+            <p style='color: #e74c3c;' >this is work in progress. I still have a few archived articles to be dumped here. Sorry :/</p>
+            <ul class="list" data-pjax>
+                <li class="">
+                    <a href="/posts/finally-phew.html">
+      Finally &#128123;
+    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+    <footer class="footer">
+        Lots of Love. THE END.
+    </footer>
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-45337245-4', 'auto');
+    ga('send', 'pageview');
+    </script>
     <script src="/scripts/malarkey.min.js"></script>
     <script src="/scripts/main.js"></script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-45337245-4', 'auto');
-      ga('send', 'pageview');
-    </script>
 </body>
 
 </html>
