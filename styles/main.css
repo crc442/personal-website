@@ -202,7 +202,8 @@ article img:not(.emoji) {
 .photo.p-3:hover ~ .c-3,
 .photo.p-4:hover ~ .c-4,
 .photo.p-5:hover ~ .c-5,
-.photo.p-6:hover ~ .c-6 {
+.photo.p-6:hover ~ .c-6,
+.photo.p-7:hover ~ .c-7 {
     display: block
 }
 
