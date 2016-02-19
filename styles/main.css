@@ -10,7 +10,7 @@ body {
 
 @font-face{
   font-family: "Anonymous Pro";
-  src : url("/fonts/AnonymousPro.ttf");
+  src : url('https://fonts.googleapis.com/css?family=Bitter');
 }
 
 code {
