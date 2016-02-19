@@ -8,10 +8,10 @@ body {
     word-wrap: break-word
 }
 
-@font-face{
+/*@font-face{
   font-family: "Anonymous Pro";
   src : url("/fonts/AnonymousPro.ttf");
-}
+}*/
 
 code {
     font-family: 'Source Code Pro';
@@ -19,8 +19,7 @@ code {
 
 h3,
 .name {
-    font-family: "Anonymous Pro";
-    font-weight: normal
+    font-family: "Bitter";
 }
 
 h3 {
