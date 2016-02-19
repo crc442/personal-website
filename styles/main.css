@@ -8,10 +8,10 @@ body {
     word-wrap: break-word
 }
 
-/*@font-face{
+@font-face{
   font-family: "Anonymous Pro";
-  src : url('https://fonts.googleapis.com/css?family=Bitter');
-}*/
+  src : url("/fonts/AnonymousPro.ttf");
+}
 
 code {
     font-family: 'Source Code Pro';
@@ -19,8 +19,8 @@ code {
 
 h3,
 .name {
-    font-family: "Bitter";
-    font-weight: 400;
+    font-family: 'Bitter', serif;
+    font-weight: normal;
 }
 
 h3 {
