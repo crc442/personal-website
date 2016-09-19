@@ -2,25 +2,24 @@ body {
     padding: 0;
     margin: 0;
     line-height: 1.8em;
-    font-family: 'Cutive Mono', "YuMincho", monospace;
+    font-family: 'Source Code Pro';
     font-size: 18px;
     -webkit-font-smoothing: antialiased;
     word-wrap: break-word
 }
 
-@font-face{
+/*@font-face{
   font-family: "Anonymous Pro";
   src : url("/fonts/AnonymousPro.ttf");
-}
+}*/
 
 code {
-    font-family: 'Cutive Mono', "YuMincho", monospace
+    font-family: 'Source Code Pro';
 }
 
 h3,
 .name {
-    font-family: "Anonymous Pro";
-    font-weight: normal
+    font-family: "Bitter";
 }
 
 h3 {
