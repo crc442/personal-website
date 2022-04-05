@@ -15,7 +15,6 @@
     typist
         .pause(2400).delete(initialText.length)
         .type('a pokemon master').pause().delete(16)
-        .type('the karate kid').pause().delete(14)
         .type('Web Developer').pause().delete(14)
         .type('n amateur drummer').pause().delete(18)
         .type('a Software Engineer').pause().delete(19)
